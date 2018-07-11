@@ -28,7 +28,7 @@ func (filter TestRepeatFilter) Apply(t interface{}) (interface{}) {
 }
 
 func main() {
-	fmt.Println(filterchain.New(TestToLowerFilter{}, TestRepeatFilter{}).Apply("test"))
+	fmt.Println(filterchain.New(TestToLowerFilter{}, TestRepeatFilter{}).Apply("TEST"))
 }
 
 ```
